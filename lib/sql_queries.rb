@@ -19,11 +19,12 @@ def select_youngest_bear_and_returns_name_and_age
 end
 
 def selects_most_prominent_color_and_returns_with_count
-  "SELECT COUNT(color) AS color FROM bears GROUP BY color;"
+  "SELECT COUNT(color) AS FROM bears GROUP BY color;"
 end
 
 def counts_number_of_bears_with_goofy_temperaments
-  "Write your SQL query here"
+  "SELECT color, COUNT(color) FROM bears GROUP BY color ORDER BY COUNT(color) LIMIT 1;
+"
 end
 
 def selects_bear_that_killed_Tim
